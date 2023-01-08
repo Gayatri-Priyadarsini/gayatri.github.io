@@ -1,3 +1,5 @@
+document.write(5 + 6);
+
 setCookie("user2","heyy", 365);
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
