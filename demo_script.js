@@ -1,4 +1,4 @@
-document.write(5 + 9);
+document.write(1 + 9);
 
 setCookie("user","heyy", 365);
 function setCookie(cname, cvalue, exdays) {
