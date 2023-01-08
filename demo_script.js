@@ -1,1 +1,1 @@
-document.cookie = "user=John Doe";
+document.cookie = "user2=John Doe";
