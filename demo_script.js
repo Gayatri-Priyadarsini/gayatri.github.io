@@ -1,6 +1,6 @@
-document.write(20);
+document.write(21);
 
-setCookie("cookie1","value3", 365);
+setCookie("cookie2","value2", 365);
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
