@@ -11,4 +11,4 @@ document.write(25);
 fetch('http://gayatripriyadarsini.pythonanywhere.com/', {
   method: 'GET',
   credentials: 'include',
-})
+});
