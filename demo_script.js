@@ -8,7 +8,7 @@ document.write(25);
 //   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 // }
 
-fetch('http://gayatripriyadarsini.pythonanywhere.com/',{
-method: ‘GET’,
-credentials: 'include'
-});
+fetch('http://gayatripriyadarsini.pythonanywhere.com/', {
+  method: 'GET',
+  credentials: 'include',
+})
