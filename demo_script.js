@@ -1,4 +1,4 @@
-document.write(25);
+// document.write(25);
 
 // setCookie("cookie2","value2", 365);
 // function setCookie(cname, cvalue, exdays) {
