@@ -1,4 +1,4 @@
-document.write(25);
+document.write(26);
 
  if (localStorage.clickcount) {
     localStorage.clickcount = Number(localStorage.clickcount)+1;
