@@ -1,9 +1,11 @@
 document.write(25);
 
-if (localStorage.clickcount) {
-  localStorage.clickcount = Number(localStorage.clickcount)-1;
-}
-document.getElementById("demo").innerHTML = localStorage.clickcount;
+ if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("demo").innerHTML = localStorage.clickcount;
 
 // setCookie("cookie2","value2", 365);
 // function setCookie(cname, cvalue, exdays) {
