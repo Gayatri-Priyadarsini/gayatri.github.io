@@ -1,9 +1,7 @@
 document.write(25);
 
 if (localStorage.clickcount) {
-  localStorage.clickcount = Number(localStorage.clickcount)+1;
-} else {
-  localStorage.clickcount = 1;
+  localStorage.clickcount = Number(localStorage.clickcount)-1;
 }
 document.getElementById("demo").innerHTML = localStorage.clickcount;
 
