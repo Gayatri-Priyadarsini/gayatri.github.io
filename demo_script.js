@@ -1,5 +1,5 @@
-//document.write("A third-party script is also being used. This script can be changed to act maliciously, intentioanlly or untentionally");
-document.write(2);
+document.write("A third-party script is also being used. This script can be changed to act maliciously, intentioanlly or untentionally");
+//document.write(2);
  if (localStorage.clickcount) {
     localStorage.clickcount = Number(localStorage.clickcount)+1;
   } else {
