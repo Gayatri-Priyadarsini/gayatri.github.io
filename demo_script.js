@@ -1,6 +1,6 @@
 //document.write("A third-party script is also being used. This script can be changed to act maliciously, intentioanlly or untentionally");
 
-document.write("Hello");
+document.write("Hello..");
 document.write("<br> I increase the clickcount!");
  if (localStorage.clickcount) {
     localStorage.clickcount = Number(localStorage.clickcount)+1;
