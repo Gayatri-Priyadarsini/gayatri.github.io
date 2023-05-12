@@ -10,8 +10,30 @@ document.write("<br> I increase the clickcount!");
   document.getElementById("demo").innerHTML = localStorage.clickcount;
 
 
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+name=getCookie('Cookie_consent')
 
-setCookie('Cookie_consent', "true", 30);
+   if(name!=""){
+       //document.getElementById('cookie-consent-container').hidden = true;
+       if(name=='true'){
+           setCookie('Cookie_consent', "true", 30);
+       }
+   }
+
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
