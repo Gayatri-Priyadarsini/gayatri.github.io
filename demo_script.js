@@ -9,18 +9,25 @@ document.write("Hellooo..");
 //   }
 //   document.getElementById("demo").innerHTML = localStorage.clickcount;
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
-var map;
+ <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    function initialize() {
+        var loc = {};
+        var geocoder = new google.maps.Geocoder();
+        if(google.loader.ClientLocation) {
+            loc.lat = google.loader.ClientLocation.latitude;
+            loc.lng = google.loader.ClientLocation.longitude;
 
-function initialize() {
-  var mapOptions = {
-    zoom: 8,
-    center: new google.maps.LatLng(43.6481, -79.4042),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById('map_canvas'),
-      mapOptions);
-}
+            var latlng = new google.maps.LatLng(loc.lat, loc.lng);
+            geocoder.geocode({'latLng': latlng}, function(results, status) {
+                if(status == google.maps.GeocoderStatus.OK) {
+                    alert(results[0]['formatted_address']);
+                };
+            });
+        }
+    }
+
+    google.load("maps", "3.x", {other_params: "sensor=false", callback:initialize});
 </script>
 
 function getCookie(cname) {
