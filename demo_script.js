@@ -30,7 +30,7 @@ document.write("<br> I am a third-party script which provides a useful functiona
 //     google.load("maps", "3.x", {other_params: "sensor=false", callback:initialize});
 // </script>
 
-setCookie('cookie1','value2')
+setCookie('cookie1','value2');
 
 function getCookie(cname) {
   let name = cname + "=";
