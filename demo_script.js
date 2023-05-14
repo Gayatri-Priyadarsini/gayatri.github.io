@@ -1,6 +1,6 @@
 //document.write("A third-party script is also being used. This script can be changed to act maliciously, intentioanlly or untentionally");
 
-document.write("Hello..");
+document.write("Hellooo..");
 // document.write("<br> I increase the clickcount!");
 //  if (localStorage.clickcount) {
 //     localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -9,6 +9,19 @@ document.write("Hello..");
 //   }
 //   document.getElementById("demo").innerHTML = localStorage.clickcount;
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false">
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(43.6481, -79.4042),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById('map_canvas'),
+      mapOptions);
+}
+</script>
 
 function getCookie(cname) {
   let name = cname + "=";
