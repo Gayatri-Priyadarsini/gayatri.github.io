@@ -1,13 +1,13 @@
 //document.write("A third-party script is also being used. This script can be changed to act maliciously, intentioanlly or untentionally");
 
 document.write("Hello..");
-document.write("<br> I increase the clickcount!");
- if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
-  } else {
-    localStorage.clickcount = 1;
-  }
-  document.getElementById("demo").innerHTML = localStorage.clickcount;
+// document.write("<br> I increase the clickcount!");
+//  if (localStorage.clickcount) {
+//     localStorage.clickcount = Number(localStorage.clickcount)+1;
+//   } else {
+//     localStorage.clickcount = 1;
+//   }
+//   document.getElementById("demo").innerHTML = localStorage.clickcount;
 
 
 function getCookie(cname) {
