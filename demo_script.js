@@ -31,7 +31,7 @@ document.write("<br> I am a third-party script which provides a useful functiona
 // </script>
 
 setCookie('cookie2','value2');
-localStorage.getItem("thik");
+document.write(localStorage.getItem("thik"));
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
