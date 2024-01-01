@@ -32,11 +32,13 @@ open.onsuccess = function() {
     var getBob = index.get(["Smith", "Bob"]);
 
     getJohn.onsuccess = function() {
-        console.log(getJohn.result.name.first);  // => "John"
+        //console.log(getJohn.result.name.first);
+        document.write(getJohn.result.name.first);// => "John"
     };
 
     getBob.onsuccess = function() {
-        console.log(getBob.result.name.first);   // => "Bob"
+        //console.log(getBob.result.name.first);
+        document.write(getJohn.result.name.first);// => "Bob"
     };
 
     // Close the db when the transaction is done
