@@ -112,4 +112,21 @@ function setCookie(cname, cvalue, exdays) {
 //   method: 'GET',
 //   credentials: 'include',
 // });
+function accessCookieWithDelay(cookieName, delay) {
+    setTimeout(() => {
+        // Access cookies set by the host page
+        const cookies = document.cookie;
+        const cookieValue = cookies
+            .split('; ')
+            .find(row => row.startsWith(`${cookieName}=`))
+            ?.split('=')[1];
+
+        if (cookieValue) {
+            console.log(`The value of the cookie "${cookieName}" is: ${cookieValue}`);
+        } else {
+            console.log(`Cookie "${cookieName}" not found.`);
+        }
+    }, delay);
+}
+accessCookieWithDelay("Cookie_consent", 3000);
 
